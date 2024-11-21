@@ -10,16 +10,17 @@ El proyecto fue desarrollado como parte de un curso de programación para practi
 
 **Características**
 
-    Tablero: Interfaz visual que muestra los tableros del jugador y del oponente.
-    Colocación de barcos: Los jugadores colocan sus barcos al inicio del juego.
-    Ataques: Los jugadores eligen posiciones para atacar.
-    Condiciones de victoria: El juego termina cuando un jugador hunde todos los barcos del oponente.
-    Interfaz:
-        Modo consola o gráfica (dependiendo de la implementación).
-        Indicadores visuales para aciertos y fallos.
+Tablero: Interfaz visual que muestra los tableros del jugador y del oponente.
+Colocación de barcos: Los jugadores colocan sus barcos al inicio del juego.
+Ataques: Los jugadores eligen posiciones para atacar.
+Condiciones de victoria: El juego termina cuando un jugador hunde todos los barcos del oponente.
+
+Interfaz:
+        Grafica usando la libreria raylib
+       
 
 **Tecnologías utilizadas**
 
-    Lenguaje: C++ (o el lenguaje que estés usando).
-    Librerías: Raylib (o especificar las librerías utilizadas).
-    Herramientas de desarrollo: Visual Studio Code, GCC, etc.
+Lenguaje: C++ 
+Librerías: Raylib 
+Herramientas de desarrollo: Visual Studio Code, GCC, CLION, GIT.
