@@ -1,0 +1,37 @@
+# ninja log v6
+2	237	7538468383580125	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-mkdir	8e28648387cc2f2e
+3423	3652	7539065287770933	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-patch	a50308c4963e9352
+2	237	7538468383580125	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-mkdir	8e28648387cc2f2e
+237	12885	7538468510066809	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-download	fe7c9d97a2ebe50d
+3423	3652	7539065287770933	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-patch	a50308c4963e9352
+4532	4913	7539065300382599	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-done	ad5ae7df30d5cccc
+3652	3868	7539065289936586	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-configure	9af00a5fc7e18e14
+2	3423	7539065251322286	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-update	27b4a9f3aa597708
+237	12885	7538468510066809	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-download	fe7c9d97a2ebe50d
+4319	4532	7539065296563937	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-test	5460cf27fafbf297
+2	3423	7539065251322286	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-update	27b4a9f3aa597708
+3652	3868	7539065289936586	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-configure	9af00a5fc7e18e14
+3868	4103	7539065292266649	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-build	c36395f276c40c29
+3868	4103	7539065292266649	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-build	c36395f276c40c29
+4319	4532	7539065296563937	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-test	5460cf27fafbf297
+4103	4319	7539065294447309	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-install	c572c22cb1f7e5dd
+4103	4319	7539065294447309	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-install	c572c22cb1f7e5dd
+4532	4913	7539065300382599	CMakeFiles/raylib_cpp-populate-complete	ad5ae7df30d5cccc
+4532	4913	7539065300382599	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-done	ad5ae7df30d5cccc
+4532	4913	7539065300382599	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/CMakeFiles/raylib_cpp-populate-complete	ad5ae7df30d5cccc
+1	3130	7539104252722356	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-update	27b4a9f3aa597708
+1	3130	7539104252722356	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-update	27b4a9f3aa597708
+3134	3340	7539104286046687	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-patch	a50308c4963e9352
+3134	3340	7539104286046687	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-patch	a50308c4963e9352
+3340	3487	7539104287540509	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-configure	9af00a5fc7e18e14
+3340	3487	7539104287540509	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-configure	9af00a5fc7e18e14
+3487	3684	7539104289507388	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-build	c36395f276c40c29
+3487	3684	7539104289507388	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-build	c36395f276c40c29
+3685	3845	7539104291118806	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-install	c572c22cb1f7e5dd
+3685	3845	7539104291118806	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-install	c572c22cb1f7e5dd
+3845	4029	7539104292959564	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-test	5460cf27fafbf297
+3845	4029	7539104292959564	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-test	5460cf27fafbf297
+4030	4347	7539104296135936	CMakeFiles/raylib_cpp-populate-complete	ad5ae7df30d5cccc
+4030	4347	7539104296135936	raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-done	ad5ae7df30d5cccc
+4030	4347	7539104296135936	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/CMakeFiles/raylib_cpp-populate-complete	ad5ae7df30d5cccc
+4030	4347	7539104296135936	D:/SynologyDrive/SynologyDrive/tareas pal tec/Pensamiento computacional/Battleship1C++/cmake-build-debug/_deps/raylib_cpp-subbuild/raylib_cpp-populate-prefix/src/raylib_cpp-populate-stamp/raylib_cpp-populate-done	ad5ae7df30d5cccc
