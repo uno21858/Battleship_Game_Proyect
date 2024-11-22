@@ -19,6 +19,6 @@ Interface: Graphical using the raylib library.
 
 **Technologies used**
 
-Language: C++ Libraries: Raylib Development tools: Visual Studio Code, GCC, CLION, GIT.
+Language: C++ Libraries: Raylib 
+Development tools: Visual Studio Code, GCC, CLION, GIT.
 
-Translated with DeepL.com (free version)
