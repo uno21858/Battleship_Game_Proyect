@@ -1,26 +1,24 @@
 **Battleship Game**
 
-Un juego clásico de estrategia naval, implementado como parte de un proyecto de programación.
+A classic naval strategy game with GUI, implemented as part of a programming project.
 
-**Descripción**
 
-Este proyecto es una versión digital del juego clásico Battleship (Hundir la flota). Los jugadores colocan barcos en un tablero y tratan de hundir los barcos del oponente adivinando sus ubicaciones. El objetivo del juego es hundir todos los barcos del oponente antes de que ellos hundan los tuyos.
+Description
 
-El proyecto fue desarrollado como parte de un curso de programación para practicar conceptos como lógica de juego, estructuras de datos y diseño de interfaces básicas.
+This project is a digital version of the classic game Battleship (Sink the Fleet). Players place ships on a board and try to sink the opponent's ships by guessing their locations. The object of the game is to sink all the opponent's ships before they sink yours.
 
-**Características**
+The project was developed as part of a programming course to practice concepts such as game logic, data structures and basic interface design.
 
-Tablero: Interfaz visual que muestra los tableros del jugador y del oponente.
-Colocación de barcos: Los jugadores colocan sus barcos al inicio del juego.
-Ataques: Los jugadores eligen posiciones para atacar.
-Condiciones de victoria: El juego termina cuando un jugador hunde todos los barcos del oponente.
 
-Interfaz:
-        Grafica usando la libreria raylib
-       
+**Features**
 
-**Tecnologías utilizadas**
+Board: Visual interface showing player and opponent boards. Ship Placement: Players place their ships at the start of the game. Attacks: Players choose positions to attack. Victory conditions: The game ends when a player sinks all the opponent's ships.
 
-Lenguaje: C++ 
-Librerías: Raylib 
-Herramientas de desarrollo: Visual Studio Code, GCC, CLION, GIT.
+Interface: Graphical using the raylib library.
+
+
+**Technologies used**
+
+Language: C++ Libraries: Raylib Development tools: Visual Studio Code, GCC, CLION, GIT.
+
+Translated with DeepL.com (free version)
