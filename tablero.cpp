@@ -58,6 +58,7 @@ int main()
         EndDrawing();
     }
 
+
     // De-Initialization
     CloseWindow();        // Close window and OpenGL context
 
