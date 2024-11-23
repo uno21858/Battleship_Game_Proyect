@@ -35,6 +35,7 @@ endif()
 
 # Definimos el ejecutable
 add_executable(Battleship1C__ StartMenu.cpp
+        Button.cpp
         StartMenu.cpp)
 
 
