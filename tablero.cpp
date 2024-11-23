@@ -1,8 +1,6 @@
-// Juego grafico de battleship grafico usando raylib
-
-// Librerias necesarias
 #include "raylib.h"
 #include "Tablero.hpp"
+#include "naves.hpp"
 
 // Tamaño del grid
 const int rows = 10;
@@ -31,7 +29,11 @@ void ShowGameBoard() {
     const int screenHeight = 1400;
 
     InitWindow(screenWidth, screenHeight, "Battleship");
-    SetWindowIcon(LoadImage("../Graphics/icon.png"));  // Cargar ícono (asegúrate de corregir la ruta)
+    SetWindowIcon(LoadImage("../Graphics/icon.png")); // Cargar ícono (asegúrate de corregir la ruta)
+
+    // Crear las naves una vez (persisten durante el juego)
+    Naves ship1(1, {100, 100}, 0.25); // Nave1
+    Naves ship2(2, {300, 300}, 0.25); // Nave2
 
     while (!WindowShouldClose()) { // Detectar el botón para cerrar
         BeginDrawing();
@@ -39,6 +41,10 @@ void ShowGameBoard() {
 
         // Dibujar el grid del tablero
         DrawGameGrid(0, 97);
+
+        // Dibujar las naves
+        ship1.Draw();
+        ship2.Draw();
 
         EndDrawing();
     }
