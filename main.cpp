@@ -1,17 +1,15 @@
-//
-// Created by elmer on 11/21/2024.
-//
-
-
 // logica del juego
 
 #include <iostream>
 
-using namespace std;
+class Naves{
+
+  };
+
+
 
 int main(){
-  cout<<"Hola"<<endl;
-
+  std::cout<<"Hola"<<std::endl;
 
   return 0;
   };

@@ -3,7 +3,7 @@
 // Librerias necesarias
 
 #include <raylib.h>
-
+#include "naves.hpp"
 
 // TAma;o del grid
 const int rows = 10;
@@ -33,8 +33,11 @@ int main()
     const int screenHeight = 1400;
     SetTargetFPS(60);
     InitWindow(screenWidth, screenHeight, "Battleship");
+    SetWindowIcon(LoadImage("../Graphics/icon.png"));  // No funciona
 
 
+
+    Naves nave1(3, {100, 100});
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
@@ -47,6 +50,7 @@ int main()
 
         //DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
         DrawGameGrid(0, 97);
+        nave1.Draw();
         EndDrawing();
     }
 

@@ -34,9 +34,10 @@ endif()
 # Cambiar el nombre al que se va a ejecutar
 
 # Definimos el ejecutable
-add_executable(Battleship1C__ StartMenu.cpp
+add_executable(Battleship1C__ tablero.cpp
         Button.cpp
-        StartMenu.cpp)
+        naves.cpp
+        tablero.cpp)
 
 
 

@@ -1,6 +1,4 @@
-//
-// Created by elmer on 11/22/2024.
-//
+
 #include "raylib.h"
 #include <cstdio>
 #include <iostream>
