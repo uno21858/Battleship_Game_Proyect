@@ -26,21 +26,12 @@ void DrawGameGrid(int offsetX, int offsetY) {
 }
 
 
-// Menu de inicio
-void DrawMenu() {
-    DrawText("Battleship", 190, 200, 20, LIGHTGRAY);
-
-    DrawText("1. Jugar", 190, 250, 20, LIGHTGRAY);
-
-    DrawText("2. Salir", 190, 300, 20, LIGHTGRAY);
-}
-
-
 int main()
 {
     // Inicializar la ventana
     const int screenWidth = 1300;
     const int screenHeight = 1400;
+    SetTargetFPS(60);
     InitWindow(screenWidth, screenHeight, "Battleship");
 
     // Main game loop

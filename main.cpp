@@ -6,7 +6,10 @@
 // logica del juego
 
 
-class Barco {
+
+int main(){
 
 
+  return 0;
   };
+

@@ -29,9 +29,16 @@ if (NOT raylib_cpp_FOUND)
     FetchContent_MakeAvailable(raylib_cpp)
 endif()
 
+
+
+# Cambiar el nombre al que se va a ejecutar
+
 # Definimos el ejecutable
-add_executable(Battleship1C__ tablero.cpp
-        tablero.cpp)
+add_executable(Battleship1C__ StartMenu.cpp
+        StartMenu.cpp)
+
+
+
 
 # Configuración de propiedades del target
 set_target_properties(Battleship1C__ PROPERTIES CXX_STANDARD 11)
@@ -50,3 +57,4 @@ if (${PLATFORM} STREQUAL "Web")
             -sEXPORTED_RUNTIME_METHODS=ccall
             -sUSE_GLFW=3)
 endif()
+
