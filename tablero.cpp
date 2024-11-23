@@ -2,14 +2,15 @@
 
 // Librerias necesarias
 
-#include <raylib.h>
-#include "naves.hpp"
+#include "raylib.h"
+#include "tablero.hpp"
 
-// TAma;o del grid
+// Tamaño del grid
 const int rows = 10;
 const int cols = 10;
 const int cellSize = 130;
 
+// Función para dibujar el grid
 void DrawGameGrid(int offsetX, int offsetY) {
     for (int row = 0; row < rows; row++) {
         for (int col = 0; col < cols; col++) {
@@ -25,40 +26,25 @@ void DrawGameGrid(int offsetX, int offsetY) {
     }
 }
 
-
-int main()
-{
-    // Inicializar la ventana
+// Función principal del tablero
+void ShowGameBoard() {
     const int screenWidth = 1300;
     const int screenHeight = 1400;
-    SetTargetFPS(60);
+
     InitWindow(screenWidth, screenHeight, "Battleship");
-    SetWindowIcon(LoadImage("../Graphics/icon.png"));  // No funciona
+    SetWindowIcon(LoadImage("../Graphics/icon.png"));  // Cargar ícono (asegúrate de corregir la ruta)
 
 
-
-    Naves nave1(3, {100, 100});
-    // Main game loop
-    while (!WindowShouldClose())    // Detect window close button or ESC key
-    {
-        // Update
-
-        // Draw
+    while (WindowShouldClose()) { // Detectar el botón para cerrar
         BeginDrawing();
-
         ClearBackground(DARKBLUE);
 
-        //DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        // Dibujar el grid del tablero
         DrawGameGrid(0, 97);
-        nave1.Draw();
+
         EndDrawing();
     }
 
-
-    // De-Initialization
-    CloseWindow();        // Close window and OpenGL context
-
-
-    return 0;
+    CloseWindow(); // Cerrar ventana y liberar recursos
 }
 

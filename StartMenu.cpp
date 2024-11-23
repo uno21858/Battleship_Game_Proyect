@@ -1,67 +1,58 @@
-
 #include "raylib.h"
+#include "button.hpp"
 #include <cstdio>
 #include <iostream>
-#include "button.hpp"
-
 #include <unistd.h> // Para obtener la ruta del archivo ejecutable
-int main()
-{
-    // Busca donde esta el archivo ejecutable
+
+int ShowStartMenu() {
+    // Busca donde está el archivo ejecutable
     char cwd[1024];
     if (getcwd(cwd, sizeof(cwd)) != NULL)
         printf("Current working directory: %s\n", cwd);
-
-
 
     // Inicializar la ventana
     const int screenWidth = 1024;
     const int screenHeight = 1024;
     SetTargetFPS(60);
     InitWindow(screenWidth, screenHeight, "Battleship menu");
-    SetWindowIcon(LoadImage("../Graphics/icon.png"));  // No funciona
+    SetWindowIcon(LoadImage("../Graphics/icon.png"));  // Configurar icono
 
-    Texture2D background = LoadTexture("../Graphics/Menu.png"); // Descarga la imagen de fondo
+    Texture2D background = LoadTexture("../Graphics/Menu.png"); // Fondo del menú
 
-    // Botones
-    Button startButton("../Graphics/StartButton.png", { 100, 600}, 0.35);  // Posicion X y Y del boton de inicio, y el tamaño del boton
-    Button exitButton("../Graphics/ExitButton.png", { 600, 600}, 0.345);  // Posicion X y Y del boton de inicio, y el tamaño del boton
+    // Crear botones
+    Button startButton("../Graphics/StartButton.png", { 100, 600}, 0.35);  // Botón de inicio
+    Button exitButton("../Graphics/ExitButton.png", { 600, 600}, 0.345);  // Botón de salida
     bool exit = false;
+
+    // Variable que controla la acción seleccionada: 1 para jugar, 0 para salir
+    int action = 0;
+
     // Main game loop
-    while (WindowShouldClose() == false && exit == false)    // Detect window close button or ESC key
-    {
-    // Funciones del mouse press o boton
-        // Bottón de inicio
+    while (WindowShouldClose() == false && exit == false) {
         Vector2 mousePosition = GetMousePosition();
         bool mousePressed = IsMouseButtonPressed(MOUSE_LEFT_BUTTON);
+
+        // Detectar si se presiona un botón
         if (startButton.isPressed(mousePosition, mousePressed)) {
-            printf("Start button pressed\n");
+            action = 1;  // Jugar
+            break;
         }
-        //Botón de salir
         if (exitButton.isPressed(mousePosition, mousePressed)) {
-            exit = true;
+            action = 0;  // Salir
+            break;
         }
 
-
-
-        // Draw
+        // Dibujar el menú
         BeginDrawing();
         ClearBackground(DARKBLUE);
-        // All of q se quiera dibujar va despues de esta linea
-        DrawTexture(background, 0, 0, WHITE); // Dibuja el fondo
+        DrawTexture(background, 0, 0, WHITE);
 
-        startButton.Draw(); // Dibuja el boton de inicio
-        exitButton.Draw(); // Dibuja el boton de salida
+        startButton.Draw();
+        exitButton.Draw();
         EndDrawing();
     }
-    // De-Initialization
-    CloseWindow();        // Close window and OpenGL context
 
-
-    return 0;
+    // Desinicializar la ventana y recursos
+    CloseWindow();
+    return action;
 }
-
-
-
-
-
