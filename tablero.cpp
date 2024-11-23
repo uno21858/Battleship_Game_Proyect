@@ -1,9 +1,8 @@
 // Juego grafico de battleship grafico usando raylib
 
 // Librerias necesarias
-
 #include "raylib.h"
-#include "tablero.hpp"
+#include "Tablero.hpp"
 
 // Tamaño del grid
 const int rows = 10;
@@ -34,8 +33,7 @@ void ShowGameBoard() {
     InitWindow(screenWidth, screenHeight, "Battleship");
     SetWindowIcon(LoadImage("../Graphics/icon.png"));  // Cargar ícono (asegúrate de corregir la ruta)
 
-
-    while (WindowShouldClose()) { // Detectar el botón para cerrar
+    while (!WindowShouldClose()) { // Detectar el botón para cerrar
         BeginDrawing();
         ClearBackground(DARKBLUE);
 
@@ -47,4 +45,3 @@ void ShowGameBoard() {
 
     CloseWindow(); // Cerrar ventana y liberar recursos
 }
-

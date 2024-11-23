@@ -1,26 +1,19 @@
 #include "raylib.h"
-#include "StartMenu.hpp"
-#include "Tablero.hpp"
-
-enum GameState { MENU, GAME, EXIT }; // Estados posibles del juego
+#include "StartMenu.hpp"  // Incluir el encabezado del menú
+#include "Tablero.hpp"    // Incluir el encabezado del tablero (debes crearlo si no existe)
 
 int main() {
-    GameState currentState = MENU; // Comenzar en el menú
+    while (true) {
+        // Mostrar el menú principal
+        int action = ShowStartMenu();
 
-    while (currentState != EXIT) { // Mantener el programa ejecutándose mientras no se elija salir
-        if (currentState == MENU) {
-            int action = ShowStartMenu(); // Mostrar el menú principal
-
-            if (action == 1) {
-                currentState = GAME; // Cambiar al estado del tablero
-            } else if (action == 0) {
-                currentState = EXIT; // Salir del juego
-            }
-        } else if (currentState == GAME) {
-            ShowGameBoard();         // Mostrar el tablero
-            currentState = MENU;     // Volver al menú después de cerrar el tablero
+        if (action == 1) {
+            // Si selecciona "Jugar", mostrar el tablero del juego
+            ShowGameBoard();
+        } else if (action == 0) {
+            // Si selecciona "Salir", terminar el programa
+            break;
         }
     }
-
     return 0;
 }

@@ -1,5 +1,6 @@
 #include "naves.hpp"
 
+
 Naves::Naves(int type, Vector2 position){
     this -> type = type;
     this -> position = position;
@@ -28,3 +29,14 @@ void Naves::Draw(){
 int Naves::getType(){
     return type;
 }
+/*
+bool Naves::isPressed(Vector2 mousePos, bool mousePressed){
+    Rectangle rect = {position.x, position.y, static_cast<float>(image.width), static_cast<float>(image.height)};
+
+    if(CheckCollisionPointRec(mousePos, rect) && mousePressed){
+        return true;
+    }
+    return false;
+}
+
+ */

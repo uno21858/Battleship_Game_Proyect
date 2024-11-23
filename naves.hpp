@@ -10,6 +10,7 @@ class Naves{
         Texture2D image;
         int type;
         Vector2 position;
+    bool isPressed(Vector2 mousePos, bool mousePressed);
     private:
 
 };
