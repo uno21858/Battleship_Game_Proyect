@@ -1,4 +1,4 @@
-#include "raylib.h"
+#include "include/raylib.h"
 #include "StartMenu.hpp"  // Incluir el encabezado del menú
 #include "tablero.hpp"    // Incluir el encabezado del tablero (debes crearlo si no existe)
 #include "Player.hpp"     // Asegúrate de incluir la clase Player que maneja las naves

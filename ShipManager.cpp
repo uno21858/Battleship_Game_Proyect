@@ -1,6 +1,6 @@
 // ShipManager.cpp
 #include "ShipManager.hpp"
-#include "raylib.h"
+#include "include/raylib.h"
 #include <iostream>
 
 ShipManager::ShipManager(Player& player) : player(player), currentShipIndex(0) {}

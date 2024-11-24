@@ -1,5 +1,5 @@
 #include "naves.hpp"
-#include "raylib.h"
+#include "include/raylib.h"
 
 Naves::Naves(int type, Vector2 position, float scale)
     : type(type), position(position), scale(scale), rotation(0.0f) {  // Inicializa en 0 grados
