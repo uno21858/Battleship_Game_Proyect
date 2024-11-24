@@ -1,52 +1,57 @@
 #include "naves.hpp"
-#include <iostream>
+#include "raylib.h"
 
-Naves::Naves(int type, Vector2 position, float scale) : type(type), position(position), scale(scale) {
+Naves::Naves(int type, Vector2 position, float scale)
+    : type(type), position(position), scale(scale), rotation(0.0f) {  // Inicializa en 0 grados
     const char* imagePath;
 
-    // Selección de la imagen según el tipo
     switch (type) {
         case 1:
-            imagePath = "../Graphics/ship1.png";  // Acorazado
+            imagePath = "../Graphics/ship1.png";
         break;
         case 2:
-            imagePath = "../Graphics/ship2.png";  // Lancha
+            imagePath = "../Graphics/ship2.png";
         break;
         case 3:
-            imagePath = "../Graphics/ship3.png";  // Submarino
+            imagePath = "../Graphics/ship3.png";
         break;
         default:
-            imagePath = "../Graphics/ship1.png";  // Por defecto
+            imagePath = "../Graphics/ship1.png";
         break;
     }
 
-    // Cargar la imagen y escalarla
-    Image image = LoadImage(imagePath);  // Carga la imagen desde el archivo
+    Image image = LoadImage(imagePath);
     int newWidth = static_cast<int>(image.width * scale);
     int newHeight = static_cast<int>(image.height * scale);
-    ImageResize(&image, newWidth, newHeight);  // Redimensiona la imagen
-    texture = LoadTextureFromImage(image);     // Crea una textura desde la imagen
-    UnloadImage(image);                        // Libera la imagen de la RAM (ya no se necesita)
+    ImageResize(&image, newWidth, newHeight);
+    texture = LoadTextureFromImage(image);
+    UnloadImage(image);
 }
 
+
 Naves::~Naves() {
-    UnloadTexture(texture);  // Libera la textura de la VRAM
+    UnloadTexture(texture);
 }
 
 void Naves::Draw() {
-    DrawTextureV(texture, position, WHITE);  // Dibuja la textura en la posición especificada
+    DrawTextureEx(texture, position, rotation, 1.0f, WHITE);  // Dibuja con la rotación
 }
 
-bool Naves::isPressed(Vector2 mousePos, bool mousePressed) {
-    // Define el área rectangular de la nave
-    Rectangle rect = {position.x, position.y, static_cast<float>(texture.width), static_cast<float>(texture.height)};
-    if (CheckCollisionPointRec(mousePos, rect) && mousePressed) {
-        std::cout << "Nave clickeada: Tipo " << type << std::endl;
-        return true;
+void Naves::SetPosition(Vector2 newPosition) {
+    position = newPosition;  // Actualiza la posición de la nave
+}
+
+void Naves::Rotate() {
+    if (rotation == 0.0f) {
+        rotation = 90.0f;  // Rota a 90 grados
+    } else {
+        rotation = 0.0f;  // Rota a 0 grados
     }
-    return false;
 }
 
-int Naves::getType() {
-    return type;  // Devuelve el tipo de la nave
+/*
+// En alguna parte de tu código donde quieras que la nave rote:
+if (IsKeyPressed(KEY_R)) {
+    nave.Rotate();  // Cambia entre 0° y 90° cuando se presiona R
 }
+*/

@@ -38,7 +38,8 @@ add_executable(Battleship1C__ main.cpp
         Button.cpp
         naves.cpp
         StartMenu.cpp
-        tablero.cpp
+        Tablero.cpp
+        Player.cpp
         main.cpp)
 
 
